@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +16,14 @@
           <img src="img/logo.png" class="">
         </div><!-- / col -->
         <div class="col-sm-5 col-md-4">
-          <blockquote>This is a sample page. Not much more to see...</blockquote>
+          <blockquote>This is a sample page. Not much more to see... {{input}}</blockquote>
+          <input type="text" placeholder="_" ng-model="input">
         </div><!-- / col -->
       </section>
     </main>
 
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
